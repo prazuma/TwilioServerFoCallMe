@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Create Voice</title>
+  <script>
+  
+  </script>
+</head>
+<body>
+  <a href="/">go back Top page</a>
+  <form action="/voice" method="post">
+    
+    <p><textarea name="voice_text" cols="40" rows="10"></textarea></p>
+    <p><label>
+    	Volume: 0.01
+    	<input type="range" min="0.01" max="2.0" step="0.01" name="volume" value="1.0">
+    	2.0
+    </label></p>
+    <p><label>
+    	Speed: 0.5
+    	<input type="range" min="0.5" max="4.0" step="0.1" name="speed" value="1.0">
+    	4.0
+    </label></p>
+    <p><label>
+    	Pitch: 0.5
+    	<input type="range" min="0.5" max="2.0" step="0.1" name="pitch" value="1.0">
+    	2.0
+    </label></p>
+    <p><label>
+    	Range: 0.0
+    	<input type="range" min="0.0" max="2.0" step="0.1" name="range" value="1.0">
+    	2.0
+    </label></p>
+    <p><input type="submit" name="submit" value="create voice"></p>
+  </form>
+</body>
+</html>
